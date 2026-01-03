@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Admin Dashboard</title>
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <div class="layout">
+            <aside>
+                <h3> Add Restarent</h3>
+                <input id="name" placeholder="name"/>
+                <input id="adress" placeholder="adress"/>
+                <select id="type">
+                    <option>rajasthani</option>
+                    <option>Gujarati</option>
+                    <option>Mughlai</option>
+                    <option>Jain</option>
+                    <option>Thai</option>
+                    <option>North Indian</option>
+                    <option>south Indian</option>
+                </select>
+                <select id=""parking>
+                    <option value="yes">parking available</option>
+                    <option value="no">no parking</option>
+                </select>
+                <button onclick="addrestaurant()">Add</button>
+            </aside>
+            <main>
+                <input id="search" placeholder="search..." onkeyup="render()"/>
+                <div id="cards"></div>
+            </main>
+        </div>
+    </body>
+</html>
